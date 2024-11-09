@@ -7,7 +7,7 @@ import numpy as np
 
 
 def result_mark(weights, marks):
-    return sum(w * m for w, m in zip(weights, marks))
+    return sum(weights[::] * marks[::])
 
 
 weights = np.array([0.35, 0.4, 0.15, 0.1])
